@@ -67,6 +67,26 @@
     background: radial-gradient(ellipse at top right, rgba(201,168,106,.06), transparent 60%);
     pointer-events: none;
   }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 64px;
+    align-items: center;
+    width: 100%;
+  }
+  .hero-photo {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--line);
+    box-shadow: 0 20px 60px rgba(0,0,0,.4), 0 0 0 6px rgba(201,168,106,.08);
+    filter: grayscale(15%) contrast(1.05);
+  }
+  @media (max-width: 760px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 40px; justify-items: start; }
+    .hero-photo { width: 180px; height: 180px; order: -1; }
+  }
   .hero-tag {
     color: var(--accent);
     font-size: 13px;
@@ -254,15 +274,20 @@
 
 <header>
   <div class="container">
-    <div class="hero-tag">Estrategia · Planificación · Energía</div>
-    <h1>Rubén Seltzer</h1>
-    <p class="hero-sub">
-      Ingeniero Industrial con más de 20 años de experiencia liderando equipos de planificación estratégica, control de gestión y desarrollo de nuevos negocios en la industria del petróleo y gas.
-    </p>
-    <div class="hero-meta">
-      <div><strong>Buenos Aires</strong>, Argentina</div>
-      <div>Industria: <strong>Oil &amp; Gas / Energía</strong></div>
-      <div>Idiomas: <strong>Español · Inglés · Hebreo</strong></div>
+    <div class="hero-grid">
+      <div>
+        <div class="hero-tag">Estrategia · Planificación · Energía</div>
+        <h1>Rubén Seltzer</h1>
+        <p class="hero-sub">
+          Ingeniero Industrial con más de 20 años de experiencia liderando equipos de planificación estratégica, control de gestión y desarrollo de nuevos negocios en la industria del petróleo y gas.
+        </p>
+        <div class="hero-meta">
+          <div><strong>Buenos Aires</strong>, Argentina</div>
+          <div>Industria: <strong>Oil &amp; Gas / Energía</strong></div>
+          <div>Idiomas: <strong>Español · Inglés · Hebreo</strong></div>
+        </div>
+      </div>
+      <img src="foto.jpg" alt="Rubén Seltzer" class="hero-photo" />
     </div>
   </div>
 </header>
