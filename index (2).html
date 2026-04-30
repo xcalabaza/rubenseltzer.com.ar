@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rubén Seltzer — Estrategia y Planificación en Energía</title>
+<meta name="description" content="Rubén Seltzer · Ingeniero Industrial con más de 20 años de experiencia en la industria del Oil & Gas. Planificación estratégica, control de gestión y desarrollo de nuevos negocios." />
+<meta name="author" content="Rubén Seltzer" />
+<meta name="google-site-verification" content="tnlet2e-PDVoeT02_MX91T9ZfBlZlH92VHXRstvECqU" />
+<meta property="og:title" content="Rubén Seltzer — Estrategia y Planificación en Energía" />
+<meta property="og:description" content="Ingeniero Industrial. Más de 20 años en Oil & Gas. Planificación estratégica, control de gestión y nuevos negocios." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://rubenseltzer.com.ar" />
+<link rel="canonical" href="https://rubenseltzer.com.ar/" />
+<meta name="robots" content="index, follow" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Rubén Seltzer",
+  "jobTitle": "Gerente de Planificación, Control y Nuevos Negocios",
+  "url": "https://rubenseltzer.com.ar",
+  "sameAs": ["https://www.linkedin.com/in/rubenseltzer/"],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Buenos Aires",
+    "addressCountry": "AR"
+  },
+  "knowsAbout": ["Planificación Estratégica", "Oil & Gas", "Vaca Muerta", "Control de Gestión", "Nuevos Negocios", "Análisis de Portafolio"],
+  "alumniOf": [
+    {"@type": "CollegeOrUniversity", "name": "Universidad Tecnológica Nacional"},
+    {"@type": "CollegeOrUniversity", "name": "IESE Business School"},
+    {"@type": "CollegeOrUniversity", "name": "Universidad de Buenos Aires"}
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0e1116;
+    --bg-soft: #151a22;
+    --text: #e8eaed;
+    --text-muted: #9aa3ad;
+    --accent: #c9a86a;
+    --line: #2a313b;
+    --max: 1080px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); text-decoration: none; transition: opacity .2s; }
+  a:hover { opacity: .75; }
+  .container { max-width: var(--max); margin: 0 auto; padding: 0 32px; }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    background: rgba(14,17,22,.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+    z-index: 100;
+    padding: 18px 0;
+  }
+  nav .container { display: flex; justify-content: space-between; align-items: center; }
+  .logo { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 500; letter-spacing: .5px; }
+  .nav-links { display: flex; gap: 32px; }
+  .nav-links a { color: var(--text-muted); font-size: 14px; letter-spacing: .3px; }
+  .nav-links a:hover { color: var(--accent); opacity: 1; }
+  @media (max-width: 640px) { .nav-links { display: none; } }
+
+  /* HERO */
+  header {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 0 80px;
+    position: relative;
+  }
+  header::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at top right, rgba(201,168,106,.06), transparent 60%);
+    pointer-events: none;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 64px;
+    align-items: center;
+    width: 100%;
+  }
+  .hero-photo {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--line);
+    box-shadow: 0 20px 60px rgba(0,0,0,.4), 0 0 0 6px rgba(201,168,106,.08);
+    filter: grayscale(15%) contrast(1.05);
+  }
+  @media (max-width: 760px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 40px; justify-items: start; }
+    .hero-photo { width: 180px; height: 180px; order: -1; }
+  }
+  .hero-tag {
+    color: var(--accent);
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    font-weight: 500;
+  }
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(42px, 6vw, 72px);
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    letter-spacing: -.5px;
+  }
+  .hero-sub {
+    font-size: clamp(18px, 2vw, 22px);
+    color: var(--text-muted);
+    max-width: 640px;
+    margin-bottom: 40px;
+    font-weight: 300;
+  }
+  .hero-meta {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    padding-top: 32px;
+    border-top: 1px solid var(--line);
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+  .hero-meta strong { color: var(--text); font-weight: 500; }
+
+  /* SECTIONS */
+  section { padding: 96px 0; border-top: 1px solid var(--line); }
+  .section-label {
+    color: var(--accent);
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+  h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(32px, 4vw, 44px);
+    font-weight: 500;
+    margin-bottom: 48px;
+    letter-spacing: -.3px;
+  }
+  .bio p {
+    font-size: 17px;
+    color: var(--text);
+    margin-bottom: 20px;
+    max-width: 780px;
+  }
+  .bio p:last-child { margin-bottom: 0; }
+  .bio strong { color: var(--accent); font-weight: 500; }
+
+  /* EXPERIENCE TIMELINE */
+  .experience { display: flex; flex-direction: column; gap: 0; }
+  .exp-item {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 32px;
+    padding: 32px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .exp-item:last-child { border-bottom: none; }
+  .exp-period {
+    color: var(--accent);
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding-top: 4px;
+  }
+  .exp-content h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .exp-company {
+    color: var(--text-muted);
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+  .exp-desc { color: var(--text); font-size: 15px; max-width: 620px; }
+  @media (max-width: 720px) {
+    .exp-item { grid-template-columns: 1fr; gap: 8px; }
+  }
+
+  /* COMPETENCIAS */
+  .pills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
+  .pill {
+    border: 1px solid var(--line);
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    color: var(--text-muted);
+    transition: all .2s;
+  }
+  .pill:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* EDUCACIÓN */
+  .education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  .edu-card {
+    background: var(--bg-soft);
+    border: 1px solid var(--line);
+    padding: 28px;
+    border-radius: 4px;
+  }
+  .edu-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .edu-card .institution {
+    color: var(--accent);
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  .edu-card .year { color: var(--text-muted); font-size: 13px; }
+
+  /* CONTACT */
+  #contacto { text-align: center; }
+  #contacto h2 { margin-bottom: 16px; }
+  .contact-sub {
+    color: var(--text-muted);
+    font-size: 17px;
+    max-width: 520px;
+    margin: 0 auto 48px;
+  }
+  .contact-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .btn {
+    display: inline-block;
+    padding: 14px 32px;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all .25s;
+    border-radius: 2px;
+  }
+  .btn:hover { background: var(--accent); color: var(--bg); opacity: 1; }
+  .btn-primary { background: var(--accent); color: var(--bg); }
+  .btn-primary:hover { background: transparent; color: var(--accent); }
+
+  /* FOOTER */
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 40px 0;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 13px;
+  }
+  footer a { color: var(--text-muted); }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="logo">RS</div>
+    <div class="nav-links">
+      <a href="#sobre-mi">Perfil</a>
+      <a href="#experiencia">Trayectoria</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-tag">Estrategia · Planificación · Energía</div>
+        <h1>Rubén Seltzer</h1>
+        <p class="hero-sub">
+          Ingeniero Industrial con más de 20 años de experiencia liderando equipos de planificación estratégica, control de gestión y desarrollo de nuevos negocios en la industria del petróleo y gas.
+        </p>
+        <div class="hero-meta">
+          <div><strong>Buenos Aires</strong>, Argentina</div>
+          <div>Industria: <strong>Oil &amp; Gas / Energía</strong></div>
+          <div>Idiomas: <strong>Español · Inglés · Hebreo</strong></div>
+        </div>
+      </div>
+      <img src="foto.jpg" alt="Rubén Seltzer" class="hero-photo" />
+    </div>
+  </div>
+</header>
+
+<section id="sobre-mi">
+  <div class="container">
+    <div class="section-label">Perfil</div>
+    <h2>Sobre mí</h2>
+    <div class="bio">
+      <p>
+        Soy ingeniero industrial con más de dos décadas de experiencia en la industria del <strong>petróleo y gas</strong>, donde he construido una carrera centrada en la <strong>planificación estratégica, el control de gestión y el desarrollo de nuevos negocios</strong>.
+      </p>
+      <p>
+        Mi rol actual combina la mirada de largo plazo del planeamiento estratégico con la disciplina operativa del control de gestión, en una industria que exige decisiones de capital intensivas y horizontes de inversión extensos. He participado activamente en el diseño de estrategias corporativas, la evaluación de portafolios de exploración y producción, y la implementación de marcos de gobierno para proyectos de gran escala —incluyendo desarrollos no convencionales en Vaca Muerta.
+      </p>
+      <p>
+        Trabajo en la intersección entre la <strong>visión técnica</strong> del negocio energético y la <strong>rigurosidad financiera</strong> que demandan sus inversiones. Combino experiencia en empresas líderes del sector con formación académica internacional y certificaciones en finanzas climáticas y gestión de portafolios.
+      </p>
+    </div>
+
+    <div class="pills">
+      <span class="pill">Planificación Estratégica</span>
+      <span class="pill">Control de Gestión</span>
+      <span class="pill">Nuevos Negocios</span>
+      <span class="pill">Upstream Oil &amp; Gas</span>
+      <span class="pill">Vaca Muerta</span>
+      <span class="pill">Análisis de Portafolio</span>
+      <span class="pill">Evaluación de Proyectos</span>
+      <span class="pill">Risk Analysis</span>
+      <span class="pill">Presupuestación</span>
+      <span class="pill">M&amp;A / Due Diligence</span>
+      <span class="pill">Liderazgo de Equipos</span>
+      <span class="pill">Reporting Climático (TCFD)</span>
+    </div>
+  </div>
+</section>
+
+<section id="experiencia">
+  <div class="container">
+    <div class="section-label">Trayectoria</div>
+    <h2>Experiencia profesional</h2>
+
+    <div class="experience">
+      <div class="exp-item">
+        <div class="exp-period">ACTUALIDAD</div>
+        <div class="exp-content">
+          <h3>Gerente de Planificación, Control y Nuevos Negocios — E&amp;P</h3>
+          <div class="exp-company">Pampa Energía S.A.</div>
+          <p class="exp-desc">
+            Lidero el área que integra la planificación estratégica, el control de gestión y el desarrollo de nuevos negocios para el segmento de Exploración y Producción, con foco en el desarrollo de activos no convencionales en la cuenca neuquina.
+          </p>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-period">PREVIO</div>
+        <div class="exp-content">
+          <h3>Gerente de Planeamiento y Estrategia — E&amp;P</h3>
+          <div class="exp-company">Pampa Energía S.A.</div>
+          <p class="exp-desc">
+            Responsable del planeamiento estratégico del negocio E&amp;P, evaluación de oportunidades de inversión y definición de hojas de ruta de desarrollo en Vaca Muerta. Participación activa como vocero institucional en foros sectoriales.
+          </p>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-period">2005 — 2017</div>
+        <div class="exp-content">
+          <h3>Gerente de Planificación y Control de Gestión — Exploración</h3>
+          <div class="exp-company">YPF S.A.</div>
+          <p class="exp-desc">
+            Más de una década en una de las principales compañías energéticas de Latinoamérica. Reconocido con el <em>Premio Gorosito Dirección YPF</em> (2012) por la contribución al armado de la nueva estrategia corporativa (Plan "100 días").
+          </p>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-period">2003 — 2005</div>
+        <div class="exp-content">
+          <h3>Consultor de Cadena de Suministro</h3>
+          <div class="exp-company">Paradigma Consulting</div>
+          <p class="exp-desc">
+            Inicio profesional en consultoría de gestión, con foco en optimización de cadena de suministro para clientes industriales.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="formacion">
+  <div class="container">
+    <div class="section-label">Formación</div>
+    <h2>Educación y certificaciones</h2>
+    <div class="education-grid">
+      <div class="edu-card">
+        <div class="institution">Universidad Tecnológica Nacional</div>
+        <h3>Ingeniería Industrial</h3>
+        <div class="year">1998 — 2002</div>
+      </div>
+      <div class="edu-card">
+        <div class="institution">Instituto Superior de la Energía · IESE Business School Madrid</div>
+        <h3>Master en Tecnología y Gestión de la Energía</h3>
+        <div class="year">2005 — 2006 · Beca Fundación Repsol-YPF</div>
+      </div>
+      <div class="edu-card">
+        <div class="institution">Universidad de Buenos Aires</div>
+        <h3>Posgrado en Planeamiento y Gestión Estratégica</h3>
+        <div class="year">2013 — 2014</div>
+      </div>
+      <div class="edu-card">
+        <div class="institution">PetroSkills · Rose &amp; Assoc · In-Acuity</div>
+        <h3>Programas ejecutivos en Análisis de Riesgo y Gestión de Portafolio</h3>
+        <div class="year">Londres · Houston</div>
+      </div>
+      <div class="edu-card">
+        <div class="institution">FSB / TCFD</div>
+        <h3>Climate-related Financial Disclosures</h3>
+        <div class="year">Serie de certificaciones · 2021</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="container">
+    <div class="section-label">Contacto</div>
+    <h2>Conversemos</h2>
+    <p class="contact-sub">
+      Para conversaciones profesionales, propuestas de colaboración o intercambio de ideas sobre la industria energética.
+    </p>
+    <div class="contact-buttons">
+      <a href="mailto:rubenseltzer@hotmail.com" class="btn btn-primary">Enviar correo</a>
+      <a href="https://www.linkedin.com/in/rubenseltzer/" target="_blank" rel="noopener" class="btn">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> Rubén Seltzer · Buenos Aires, Argentina
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
